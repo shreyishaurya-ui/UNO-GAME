@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle, #0b6623, #022d15);
+  color: white;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.opponent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.top {
+  justify-content: center;
+  padding: 10px;
+}
+
+.left, .right {
+  flex-direction: column;
+}
+
+.player-hand {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px;
+  gap: 8px;
+}
+
+.card {
+  min-width: 65px;
+  height: 95px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  transition: transform 0.2s;
+}
+
+.card:active {
+  transform: scale(1.1);
+}
+
+.large {
+  width: 90px;
+  height: 130px;
+  font-size: 24px;
+}
+
+.red { background: #e53935; }
+.green { background: #43a047; }
+.blue { background: #1e88e5; }
+.yellow { background: #fdd835; color: black; }
+.wild { background: black; }
+
+.back {
+  background: linear-gradient(45deg, red, black);
+  width: 30px;
+  height: 50px;
+  border-radius: 6px;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+}

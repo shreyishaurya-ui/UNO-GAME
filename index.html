@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UNO Mobile</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Top Player -->
+  <div id="player2" class="opponent top"></div>
+
+  <!-- Middle Section -->
+  <div class="middle">
+
+    <div id="player3" class="opponent left"></div>
+
+    <div class="center">
+      <div id="discard" class="card large"></div>
+      <div id="turnInfo"></div>
+      <button onclick="drawCard()">Draw</button>
+    </div>
+
+    <div id="player4" class="opponent right"></div>
+
+  </div>
+
+  <!-- Bottom Player -->
+  <div id="player1" class="player-hand"></div>
+
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
